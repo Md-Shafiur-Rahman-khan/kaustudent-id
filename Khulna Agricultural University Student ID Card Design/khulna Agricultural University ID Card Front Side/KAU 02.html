@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--style-->
+    <link rel="stylesheet" href="style.css">
+    <title>Khulna Agricultural University Student ID Card Design Software</title>
+</head>
+
+<body>
+<!--header part-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-12 mx-auto">
+                <img src="khulna Agricultural University 02.jpg" alt="KIIT logo" class="img-fluid khulna Agricultural University 02__logo">
+                <h3 class="text-center text__heading">Khulna Agricultural University Undergraduation/Post Graduation Digital ID Card Design Form</h3>
+            </div>
+        </div>
+    </div>
+
+<!--main part-->    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-12">
+            <!--form section-->
+                <form action="" method="post" class="input-fields form-inline">
+                    <p class="details">Fill Information of Digital ID Card</p>
+                    <hr>
+					
+					
+					
+                    <!--name-->
+                    <div class="form-floating">
+                        <input type="text" class="form-control form-control-sm" id="floatingInput"
+                            placeholder="Your Name..." required name="name">
+                        <label for="floatingInput">Name</label>
+                    </div>
+                    <br>
+					
+					<!--name-->
+                    <div class="form-floating">
+                        <input type="text" class="form-control form-control-sm" id="floatingInput"
+                            placeholder="Your Name..." required name="Faculty">
+                        <label for="floatingInput">Faculty/Dept.</label>
+                    </div>
+                    <br>
+					
+					
+					
+					
+					
+					
+					
+					
+                    <!--kiit roll no-->
+                    <div class="form-floating">
+                        <input type="number" class="form-control" id="floatingInput" placeholder="Your Roll..." required
+                            name="ID No">
+                        <label for="floatingInput">ID No</label>
+                    </div>
+                    <br>
+
+
+                    <!--student number-->
+                    <div class="form-floating">
+                        <input type="number" class="form-control" id="floatingInput" placeholder="Your Student No..."
+                            required name="Reg No">
+                        <label for="floatingInput">Reg No</label>
+                    </div>
+                    <br>
+					
+					
+					
+					
+					
+					<!--student number-->
+                    <div class="form-floating">
+                        <input type="number" class="form-control" id="floatingInput" placeholder="Your Student No..."
+                            required name="Mobile No">
+                        <label for="floatingInput">Mobile No</label>
+                    </div>
+                    <br>
+					
+					
+					<!--student number-->
+                    <div class="form-floating">
+                        <input type="date" class="form-control" id="floatingInput" placeholder="Your Student No..."
+                            required name="D.O.B.">
+                        <label for="floatingInput">D.O.B.</label>
+                    </div>
+                    <br>
+					
+				
+					
+					
+					
+					
+					
+
+                    <!--Branch-->
+
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Course..." required
+                            name="Blood Group">
+                        <label for="floatingInput">Blood Group</label>
+                    </div>
+                    <br>
+                    <!--Branch-->
+
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Branch..." required
+                            name="Hall Name">
+                        <label for="floatingInput">Hall Name</label>
+                    </div>
+                    <br>
+                  
+                    <!--upload formal photo-->
+                    <div class="input-group">
+                        <label class="input-group-text" for="file-ip-1">Upload Your ID Photo</label>
+                        <input type="file" class="form-control" id="file-ip-1" accept="image/*"
+                            onchange="showPreview(event);">
+                    </div>
+                </form>
+                <br>
+                <button onclick="toggle(); toggle1(); toggle2();" type="submit" class="btn btn-dark float-end">Preview</button>
+            </div>
+
+
+            <!--id card section-->
+
+            <div class="col-md-4 col-sm-12 icard">
+
+                <p class="details">Your Digital ID Card</p>
+                <hr>
+<div class="icard__border" id="div">
+                <div class="container">
+                    <div class="row">
+                        <!--kiit small logo section-->
+                        <div class=" col-md-4 col-sm-4 col-xs-4">
+                            <img src="kau small.jpg" alt="" srcset="" class="img-fluid kau small__header__logo float-end">
+                        </div>
+                        <!--kiit details-->
+                        <div class=" col-md-8 col-sm-8 col-xs-8">
+                            <p class="kalinga__ins">Khulna Agricultural University<br>
+                                
+                            </p>
+                            <p class="deemed">Public University</p>
+                            <p class="ugc__act">(Khulna, Bangladesh)</p>
+                        </div>
+                        <div style="height: 8px;"></div>
+                        <hr class="rulebar" style="margin-bottom: 0px;">
+                        <P style="text-align: center; font-weight: bold; margin-bottom: 0%;">IDENTITY CARD</P>
+                        <div class="output1">
+                            <!--school of ...will be displayed here-->
+                        </div>
+                            <div class="border__dp">
+                            <img id="file-ip-1-preview" class="profile__photo">
+                            </div>
+                            <div class="output2">
+                                <!--name display here -->
+                            </div>
+                          <div class="container" style="padding-left: 40px; padding-right: 40px;">
+                              <div class="row">
+                                  <div class="col-md-5 col-sm-5">
+                                      
+									  <p style="font-weight: bold; font-family: Georgia, 'Times New Roman', Times, serif;">Name</p>
+									  
+                                      <p style="font-weight: bold; font-family: Georgia, 'Times New Roman', Times, serif;"><br>Faculty/Dept.</p>
+									  
+                                      <p style="font-weight: bold; font-family: Georgia, 'Times New Roman', Times, serif;"><br>ID No</p>
+									  
+                                      <p style="font-weight: bold; font-family: Georgia, 'Times New Roman', Times, serif;">Reg No</p>
+									  
+                                      <p style="font-weight: bold; font-family: Georgia, 'Times New Roman', Times, serif;">Mobile No</p>
+									  
+									  <p style="font-weight: bold; font-family: Georgia, 'Times New Roman', Times, serif;">D.O.B.</p>
+									  
+									  <p style="font-weight: bold; font-family: Georgia, 'Times New Roman', Times, serif;">Blood Group</p>
+									  
+									  <p style="font-weight: bold; font-family: Georgia, 'Times New Roman', Times, serif;">Hall Name</p>
+									  
+                                  </div>
+                                  <div class="col-md-7 col-sm-7">
+                                       <!--id card output will start displaying entered by user-->
+                                <div class="output">
+                                    <!--here the id card will be diplayed-->
+                                </div>
+                                </div>
+                              </div>
+                          </div>
+                             
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-12">
+                                                    <div style="padding-bottom: 0.2rem;"></div>
+                                                    <p style="text-align: right; font-size: 15px; font-family: 'Times New Roman', Times, serif;">Sign of Authority</p>
+													<p style="text-align: left; font-size: 14px; font-family: 'Times New Roman', Times, serif;">Sign of Card Holder</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                    </div>
+
+                   
+                </div>
+</div>
+
+
+<button class="btn btn-dark float-end" id="button" style="margin-top: 20px;">Download ID Card</button>
+
+
+
+            </div> <!--end of the <div class="col-md-6 col-sm-12 icard"> -->
+
+
+
+            
+
+              
+            
+
+               
+            </div>
+        </div>
+    </div>
+ <br><br><br><br><br><br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 text-center" style="background-color: black; ">
+                <p style="color: white; margin-bottom: 10px; margin-top: 10px;">&copy; 2023 Khulna Agricultural University Student ID Card Design Software | Developed by Md Shafiur Rahman Khan</p>
+                <p style="color: rgb(255, 0, 0); margin-bottom: 5px; margin-top: 5px; text-transform: uppercase;">NOTE: All rights are preserved by Khulna Agricultural University authority.</p>
+            </div>
+            
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js" integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script>
+    $(document).ready(function(){
+        $("#button").click(function(){
+            domtoimage.toBlob(document.getElementById("div")).then(function(blob){
+                window.saveAs(blob, "idcard.png");
+            });
+        });
+    });
+</script>
+
+</html>
